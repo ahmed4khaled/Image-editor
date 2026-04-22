@@ -1,69 +1,52 @@
+# Image Editor (C++)
 
-# Cairo University
-## Faculty of Computers and Artificial Intelligence
-### CS213 – OOP Programming
+Console-based image processing application developed as an Object-Oriented Programming project.  
+The project demonstrates practical C++ skills through implementing core image manipulation filters and file-based workflows.
 
----
+## Project Highlights
+- Built a menu-driven image editor in C++ for loading, processing, and saving images.
+- Implemented multiple reusable image-processing operations on top of `stb_image` and `stb_image_write`.
+- Applied OOP and modular design principles to keep filter logic organized and extensible.
+- Collaborated in a team environment using Git/GitHub for shared development.
 
-# 📘 Image Editor Project  
-**Assignment 1 – Image Processing Tool**
+## Implemented Features
+- Invert colors
+- Rotate image (90, 180, 270)
+- Convert to black and white
+- Convert to grayscale
+- Flip image (horizontal/vertical)
+- Merge two images
+- Add frame (simple and decorated)
+- Blur image
+- Resize image
+- Darken/Lighten image
+- Edge detection
 
----
+## Tech Stack
+- Language: C++
+- Libraries: `stb_image.h`, `stb_image_write.h`, custom `Image_Class.h`
+- Interface: Console (menu-based CLI)
 
-## 👨‍👩‍👦 Team Members
-- Ahmed Khaled (11410120240027@stud.cu.edu.eg)  20240027
-- Seif mohamed (20240269@stud.fci-cu.edu.eg)  20240269
-- Ahmed Tamer (20240019@stud.fci-cu.edu.eg)  20240019
+## Repository Structure
+- `main.cpp` - Main menu and filter execution flow
+- `Image_Class.h` - Image abstraction and utility methods
+- `stb_image.h` / `stb_image_write.h` - Image loading/saving back-end
 
----
+## Build and Run
+Compile:
+```bash
+g++ main.cpp -o main.exe
+```
 
-## 🎯 Objectives
-- Practice C++ structured programming and arrays.  
-- Learn to use ready-made libraries (`stb_image`, `Image_Class`).  
-- Understand basic concepts of **image processing** (grayscale, invert, brightness, edge detection).  
-- Apply teamwork using **GitHub workflow** (init, clone, add, commit, push).  
+Run:
+```bash
+./main.exe
+```
 
----
+## Learning Outcomes
+- Strengthened C++ problem-solving and memory/data handling fundamentals.
+- Gained hands-on experience with classic image-processing techniques.
+- Improved team collaboration through version control and code integration.
 
-
-## ⚙️ Implemented Filters
-- Grayscale Conversion
-- Black and White
-- Invert Image
-- Merge Images
-- Flip Image colors
-- Rotate Image
-- Blur Images
-- Adding a frame to picture
-- Detect image edges
-- Darken and Lighten Image
-*(More filters will be added for Hero / Beast / Winged Dragon levels.)*  
-
----
-
-## 📂 GitHub Workflow
-- Private repository created on GitHub.  
-- Steps followed by the team:  
-  1. `git init`  
-  2. `git clone`  
-  3. `git add`  
-  4. `git commit`  
-  5. `git push`  
-
-Each member contributes their filters and commits separately.  
-
----
-
-## 📅 Deadlines
-- **Part 1:** 1 Oct 2025 → Any 6 filters + menu.  
-- **Hero / Beast:** 10 Oct 2025 → 12 or 15 filters.  
-- **Winged Dragon:** 15 Oct 2025 → 18+ filters + GUI.  
-
----
-
-## ✅ Conclusion
-This project allowed us to:  
-- Refresh our **C++ syntax**.  
-- Learn to collaborate as a team on **GitHub**.  
-- Gain first-hand experience with **image processing basics**.  
-- Implement filters similar to real-world editors like Photoshop.  
+## Notes
+- This project was originally developed as an academic assignment and can be showcased as an early portfolio project in a CV.
